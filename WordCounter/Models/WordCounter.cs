@@ -6,8 +6,18 @@ namespace Counting.Models
   {
     public static bool IsWord(string input)
     {
-    return true;
+      if (input == "")
+      {
+          return false;
+      } 
+      else if (input.Contains(" "))
+      {
+        return false;
+      } 
+      else 
+      {
+        return true;
+      }
     }
   }
-
 }
