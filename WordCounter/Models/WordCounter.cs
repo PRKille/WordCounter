@@ -33,5 +33,11 @@ namespace Counting.Models
       }
       return sentenceArr;
     }
+
+    public static string[] RemovePunctuation(string[] sentenceArr)
+    {
+      string[] punctSentenceArr = {"this,","is!","a'","word."};
+      return punctSentenceArr;
+    }
   }
 }

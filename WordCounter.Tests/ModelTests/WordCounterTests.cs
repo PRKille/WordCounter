@@ -30,5 +30,12 @@ namespace Counting.Tests
       CollectionAssert.AreEqual(RepeatCounter.SentenceNormal(sentenceArr), smallSentenceArr);
     }
     
+    [TestMethod]
+    public void RemovePunctuation_RemovesPuctuationFromAllStrings()
+    {
+      string[] punctSentenceArr = {"this,","is!","a'","word."};
+      string[] noPunctSentenceArr = {"this","is","a","word"};
+      CollectionAssert.AreEqual(RepeatCounter.RemovePunctuation(punctSentenceArr), noPunctSentenceArr);
+    }
   }
 }
