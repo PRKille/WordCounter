@@ -22,9 +22,11 @@ namespace Counting.Models
 
     public static string[] SentenceSplit(string userSentence)
     {
-      return userSentence.Split(" ");
+      string[] sentenceArr = userSentence.Split(" ");
+
+      return sentenceArr;
     }
 
-    
+
   }
 }
