@@ -33,8 +33,8 @@ namespace Counting.Tests
     [TestMethod]
     public void RemovePunctuation_RemovesPuctuationFromAllStrings()
     {
-      string[] punctSentenceArr = {"?this,","is!","a'","word."};
-      string[] noPunctSentenceArr = {"this","is","a","word"};
+      string[] punctSentenceArr = {"?this,","isn't!","a'","word."};
+      string[] noPunctSentenceArr = {"this","isn't","a","word"};
       CollectionAssert.AreEqual(RepeatCounter.RemovePunctuation(punctSentenceArr), noPunctSentenceArr);
     }
 
