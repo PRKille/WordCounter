@@ -33,9 +33,17 @@ namespace Counting.Tests
     [TestMethod]
     public void RemovePunctuation_RemovesPuctuationFromAllStrings()
     {
-      string[] punctSentenceArr = {"this,","is!","a'","word."};
+      string[] punctSentenceArr = {"?this,","is!","a'","word."};
       string[] noPunctSentenceArr = {"this","is","a","word"};
       CollectionAssert.AreEqual(RepeatCounter.RemovePunctuation(punctSentenceArr), noPunctSentenceArr);
+    }
+
+    [TestMethod]
+    public void CompareWord_ReturnsTrueIfInputWordMatchesArrayWord_True()
+    {
+      string inputWord = "word";
+      string wordFromArray = "word";
+      Assert.IsTrue(RepeatCounter.CompareWord(inputWord,wordFromArray));
     }
   }
 }
