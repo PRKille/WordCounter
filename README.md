@@ -15,8 +15,8 @@ _This console application will take in a sentence and a word from the user and r
 | Application should take in a single word | "word" | Continue |
 || "is word" | Throw exception |
 | Should take in a sentence and break it into an array at " " | "This has a word."| {This} {has} {a} {word.}|
-| Should remove all punctuation from strings in sentence array | word. | word |
 | Should normalize strings in sentence array | This | this |
+| Should remove all punctuation from strings in sentence array | word. | word |
 | Should compare InputWord to strings in array | "word" and "this" | False |
 | Should compare InputWord to strings in array | "word" and "word" | True |
 | Increment counter when words are the same | "word" and "word" | count++ |
