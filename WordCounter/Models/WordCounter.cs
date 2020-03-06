@@ -2,11 +2,11 @@ using System;
 
 namespace Counting.Models
 {
-  class Test
+  public class RepeatCounter
   {
-    public static void Temp()
+    public static bool IsWord(string input)
     {
-
+    return true;
     }
   }
 
