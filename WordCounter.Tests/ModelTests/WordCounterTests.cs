@@ -8,9 +8,10 @@ namespace Counting.Tests
   public class MakeFilesTests
   {
     [TestMethod]
-    public void MethodName_WhatItDoes_ReturnObject()
+    public void IsWord_ChecksForSingleWord_False()
     {
-
+      string userInput = "is word";
+      Assert.AreEqual(RepeatCounter.IsWord(userInput), false);
     }
 
   }
