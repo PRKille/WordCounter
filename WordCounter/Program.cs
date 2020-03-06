@@ -7,7 +7,33 @@ namespace Counting
   {
     public static void Main()
     {
-     Console.WriteLine();
+     Console.WriteLine("Please enter a sentence:");
+     string sentence = Console.ReadLine();
+     Console.WriteLine("Which word would you like to count?:");
+     string word = Console.ReadLine();
+     try
+     {
+      if (RepeatCounter.IsWord(word))
+      {
+        int count = RepeatCounter.WordCount(word, sentence);
+        Console.WriteLine($"That word appears {count} times.");
+      }
+      else
+      {
+        throw new System.InvalidOperationException("SassybotERROR 999 : Do you not know what a single word looks like?");
+      }
+     }
+     catch (Exception ex)
+     {
+        Console.WriteLine("Message = {0}", ex.Message);
+        Console.WriteLine("Source = {0}", ex.Source);
+        Console.WriteLine("StackTrace = {0}", ex.StackTrace);
+        Console.WriteLine("TargetSite = {0}", ex.TargetSite);
+
+        Console.WriteLine("\nPress Enter to start over.");
+        Console.ReadLine();
+        Main();
+     }
     }
   }
 
