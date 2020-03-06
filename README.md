@@ -12,11 +12,11 @@ _This console application will take in a sentence and a word from the user and r
 
 | Specification | Example Input | Example Output |
 |:-:|:-:|:-:|
-| Application should take in a single word | "word" | Continue |
+| Application should take in a single word (This is a quick standard error check so "word" seemed a propros) | "word" | Continue |
 || "is word" | Throw exception |
-| Should take in a sentence and break it into an array at " " | "This has a word."| {This} {has} {a} {word.}|
-| Should normalize strings in sentence array | This | this |
-| Should remove all punctuation from strings in sentence array | word. | word |
+| Should take in a sentence and break it into an array at " " (Did not need a long sentence, but enough to make sure the array would be returned correctly.) | "This has a word."| {This} {has} {a} {word.}|
+| Should normalize strings in sentence array (This was the only word in the previous array to be capitalized)| This | this |
+| Should remove all punctuation from strings in sentence array (This was the only word with punctuation)| word. | word |
 | Should compare InputWord to strings in array | "word" and "this" | False |
 || "word" and "word" | True |
 | Increment counter when words are the same | "word" and "word is word" | Return 2 |
