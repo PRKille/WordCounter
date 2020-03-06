@@ -23,11 +23,11 @@ namespace Counting.Tests
     }
 
     [TestMethod]
-    public void SentenceSplit_NormalizesAllWordsToLowercase_Array()
+    public void SentenceNormal_NormalizesAllWordsToLowercase_Array()
     {
-      string userSentence = "This is a word.";
-      string[] sentenceArr = {"this","is","a","word."};
-      CollectionAssert.AreEqual(RepeatCounter.SentenceSplit(userSentence), sentenceArr);
+      string[] sentenceArr = {"This","is","a","word."};
+      string[] smallSentenceArr = {"this","is","a","word."};
+      CollectionAssert.AreEqual(RepeatCounter.SentenceNormal(sentenceArr), smallSentenceArr);
     }
     
   }

@@ -22,11 +22,16 @@ namespace Counting.Models
 
     public static string[] SentenceSplit(string userSentence)
     {
-      string[] sentenceArr = userSentence.Split(" ");
-
-      return sentenceArr;
+      return userSentence.Split(" ");
     }
 
-
+    public static string[] SentenceNormal(string[] sentenceArr)
+    {
+      for(int i=0; i < sentenceArr.Length; i++)
+      {
+        sentenceArr[i] = sentenceArr[i].ToLower();
+      }
+      return sentenceArr;
+    }
   }
 }
