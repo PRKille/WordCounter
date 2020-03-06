@@ -58,7 +58,14 @@ namespace Counting.Models
     public static int WordCount(string word, string sentence)
     {
       int count = 0;
- 
+      string[] cleanSentence = RemovePunctuation(SentenceNormal(SentenceSplit(sentence)));
+      foreach (string compare in cleanSentence)
+      {
+        if (CompareWord(word, compare))
+        {
+          count++;
+        }
+      }
       return count;
     }
   }
