@@ -17,9 +17,9 @@ _This console application will take in a sentence and a word from the user and r
 | Should take in a sentence and break it into an array at " " (Did not need a long sentence, but enough to make sure the array would be returned correctly.) | "This has a word."| {This} {has} {a} {word.}|
 | Should normalize strings in sentence array (This was the only word in the previous array to be capitalized)| This | this |
 | Should remove all punctuation from strings in sentence array (This was the only word with punctuation)| word. | word |
-| Should compare InputWord to strings in array | "word" and "this" | False |
+| Should compare InputWord to strings in array (Short but different words) | "word" and "this" | False |
 || "word" and "word" | True |
-| Increment counter when words are the same | "word" and "word is word" | Return 2 |
+| Increment counter when words are the same(short and easy to assess) | "word" and "word is word" | Return 2 |
 
 
 ## Setup/Installation Requirements
