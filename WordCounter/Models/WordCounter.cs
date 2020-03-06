@@ -45,7 +45,6 @@ namespace Counting.Models
         if (!Char.IsLetter(sentenceArr[i][sentenceArr[i].Length-1]))
         {
           sentenceArr[i] = sentenceArr[i].Remove(sentenceArr[i].Length-1);
-        Console.WriteLine(sentenceArr[i]);
         }
       }
       return sentenceArr;
@@ -53,7 +52,14 @@ namespace Counting.Models
 
     public static bool CompareWord(string input, string compare)
     {
-      return false;
+      return input.Equals(compare);
+    }
+
+    public static int WordCount(string word, string sentence)
+    {
+      int count = 0;
+ 
+      return count;
     }
   }
 }

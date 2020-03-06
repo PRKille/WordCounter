@@ -45,5 +45,13 @@ namespace Counting.Tests
       string wordFromArray = "word";
       Assert.IsTrue(RepeatCounter.CompareWord(inputWord,wordFromArray));
     }
+
+    [TestMethod]
+    public void WordCount_ReturnsNumberOfInstancesofWordinSentence_4()
+    {
+      string userInput = "is";
+      string userSentence = "Is this is a sentence is it is?";
+      Assert.AreEqual(RepeatCounter.WordCount(userInput, userSentence), 4);
+    }
   }
 }
