@@ -19,5 +19,11 @@ namespace Counting.Models
         return true;
       }
     }
+
+    public static string[] SentenceSplit(string userSentence)
+    {
+      string[] sentenceArr = {"not","the","correct","output"};
+      return sentenceArr;
+    }
   }
 }

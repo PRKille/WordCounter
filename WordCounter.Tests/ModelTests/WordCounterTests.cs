@@ -14,5 +14,12 @@ namespace Counting.Tests
       Assert.AreEqual(RepeatCounter.IsWord(userInput), false);
     }
 
+    [TestMethod]
+    public void SentenceSplit_SepparateInputSentenceIntoArray_Array()
+    {
+      string userSentence = "This is a word.";
+      string[] sentenceArr = {"This","is","a","word."};
+      CollectionAssert.AreEqual(RepeatCounter.SentenceSplit(userSentence), sentenceArr);
+    }
   }
 }
