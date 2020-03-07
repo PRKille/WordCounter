@@ -7,6 +7,21 @@ namespace Counting
   {
     public static void Main()
     {
+      Console.WriteLine(@"
+ _____ _____ _   _ _   _ _____  __   _______ _   _______ 
+/  __ \  _  | | | | \ | |_   _| \ \ / /  _  | | | | ___ \
+| /  \/ | | | | | |  \| | | |    \ V /| | | | | | | |_/ /
+| |   | | | | | | | . ` | | |     \ / | | | | | | |    / 
+| \__/\ \_/ / |_| | |\  | | |     | | \ \_/ / |_| | |\ \ 
+ \____/\___/ \___/\_| \_/ \_/     \_/  \___/ \___/\_| \_|
+                                                         
+                                                         
+ _    _  _________________  _____ _ 
+| |  | ||  _  | ___ \  _  \/  ___| |
+| |  | || | | | |_/ / | | |\ `--.| |
+| |/\| || | | |    /| | | | `--. \ |
+\  /\  /\ \_/ / |\ \| |/ / /\__/ /_|
+ \/  \/  \___/\_| \_|___/  \____/(_)");
       Console.WriteLine("Do you need to know how many times you wrote a single word?\nIt's your lucky day!\nIf you enter a sentence I will happily count the number of times a word is in it.");
       Console.WriteLine("Please enter a sentence:");
       string sentence = Console.ReadLine();
@@ -29,10 +44,12 @@ namespace Counting
               case "n":
                 Console.Clear();
                 Console.WriteLine(@"
-               ______  _____   _____  ______  ______  __   __ _______
-              |  ____ |     | |     | |     \ |_____]   \_/   |______
-              |_____| |_____| |_____| |_____/ |_____]    |    |______
-                                                                      
+ _____ _____  ___________________   _______ 
+|  __ \  _  ||  _  |  _  \ ___ \ \ / /  ___|
+| |  \/ | | || | | | | | | |_/ /\ V /| |__  
+| | __| | | || | | | | | | ___ \ \ / |  __| 
+| |_\ \ \_/ /\ \_/ / |/ /| |_/ / | | | |___ 
+ \____/\___/  \___/|___/ \____/  \_/ \____/ 
           ");
                 break;
               default:
