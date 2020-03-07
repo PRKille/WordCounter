@@ -7,6 +7,7 @@ namespace Counting
   {
     public static void Main()
     {
+      Console.ForegroundColor = ConsoleColor.Yellow;
       Console.WriteLine(@"
  _____ _____ _   _ _   _ _____  __   _______ _   _______ 
 /  __ \  _  | | | | \ | |_   _| \ \ / /  _  | | | | ___ \
@@ -14,15 +15,20 @@ namespace Counting
 | |   | | | | | | | . ` | | |     \ / | | | | | | |    / 
 | \__/\ \_/ / |_| | |\  | | |     | | \ \_/ / |_| | |\ \ 
  \____/\___/ \___/\_| \_/ \_/     \_/  \___/ \___/\_| \_|
-                                                         
-                                                         
+                                                                                                                  
  _    _  _________________  _____ _ 
 | |  | ||  _  | ___ \  _  \/  ___| |
 | |  | || | | | |_/ / | | |\ `--.| |
 | |/\| || | | |    /| | | | `--. \ |
 \  /\  /\ \_/ / |\ \| |/ / /\__/ /_|
- \/  \/  \___/\_| \_|___/  \____/(_)");
-      Console.WriteLine("Do you need to know how many times you wrote a single word?\nIt's your lucky day!\nIf you enter a sentence I will happily count the number of times a word is in it.");
+ \/  \/  \___/\_| \_|___/  \____/(_)
+ ");
+      Console.ResetColor();
+      Console.WriteLine("Do you need to know how many times you wrote a single word?");
+      Console.ForegroundColor = ConsoleColor.Green;
+      Console.WriteLine("It's your lucky day!");
+      Console.ResetColor();
+      Console.WriteLine("If you enter a sentence I will happily count the number of times a word is in it.");
       Console.WriteLine("Please enter a sentence:");
       string sentence = Console.ReadLine();
       Console.WriteLine("Which word would you like me to count?:");
